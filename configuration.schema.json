@@ -1,0 +1,27 @@
+{
+  "$id": "",
+  "description": "JSON schema for configuration of the RepoBuildManager project",
+  "properties": {
+    "SemanticNames": {
+      "type": "boolean",
+      "description": "Whether custom repositories name should be used for functionality or not"
+    },
+    "Repositories": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "Name": {
+            "type": "string"
+          },
+          "Url": {
+            "type": "string"
+          },
+          "CurrentCommit": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": ["Repositories"]
+}
